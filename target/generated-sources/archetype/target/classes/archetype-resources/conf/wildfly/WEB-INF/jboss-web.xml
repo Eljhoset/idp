@@ -1,0 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<jboss-web>
+    <!-- You must have a security-domain configured in your JBoss EAP instance. The security-domain is necessary to provide user
+    authentication and roles mappings. -->
+    <security-domain>${artifactId}</security-domain>
+
+    <!-- Here we just define the context path of the deployment. -->
+    <context-root>${artifactId}</context-root>
+</jboss-web>
